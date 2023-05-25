@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>E-portfolio</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="icon" href="img/icon.png">
+    
+
+    <style>
+      a, a:link, a:visited {
+  color: #946bc9;
+  }
+
+
+  a:hover {
+    color:#472870;
+  }
+    </style>
+
+</head>
+
+<body>
+  <header>
+
+<nav class="nav">
+  <div class="container">
+      <div class="logo">
+          <a href="#home" style="color: #683aa4; font-weight: bold;">Bo Mulder</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">About me</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#opleiding">Opleiding</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#showcase">Showcase</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#CV">Curriculum Vitae</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#resultaten">Resultaten</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          </ul>
+      </div>
+      <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+      </span>
+  </div>
+</nav>
+
+
+<section class="home">
+  <h1 class="title">WELKOM OP MIJN E-PORTFOLIO</h1>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+
+<script>
+  $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          console.log("OK");
+      } else {
+          $('.nav').removeClass('affix');
+      }
+  });
+  
+  $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+
+  });
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+</script>
+  </header>
+
+  <main>
+    <section id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <h1 style="color:white;">..</h1>
+              <h1>Home</h1>
+              <p>Welkom bij mijn e-portfolio! Deze website toont mijn professionele identiteit, interesses en capaciteiten, inclusief mijn zelfgemaakte front-end en back-end. U zult projecten vinden die mijn expertise in webontwikkeling en programmeren aantonen. Ik hoop dat dit portfolio u een idee geeft van mijn persoonlijkheid, creativiteit en toewijding aan uitmuntendheid. Bedankt voor het bezoeken!</p>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <img src="img/SDPurple.png" class="img-fluid" alt="Software Development">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="aboutMe">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-lg-6">
+              <img src="img/AboutMe.webp" class="img-fluid" alt="About Me">
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <br>
+              <h1>About me</h1>
+              <p>Mijn naam is Bo Mulder en ik ben geboren op 10 augustus 2006. Ik beschouw mezelf als een creatief en onafhankelijk persoon met een talent voor het bedenken van ideeën en oplossingen. Anderen helpen oplossingen te vinden en met hen samen te werken vind ik leuk. Het creëren van een positieve werkomgeving en het maken van nieuwe vrienden is belangrijk voor mij, maar ik geloof ook in hard werken en efficiënt en productief zijn. Ik heb echter soms moeite met het nemen van initiatief, vooral met mensen die ik niet goed ken of met mensen die erg assertief zijn. Ik heb ook dyslexie, waardoor spellen en lezen voor mij een uitdaging is.</p>
+              <p>Momenteel zit ik in mijn eerste jaar van de studie <a href="https://scalda.nl/opleiding/software-developer?gclid=CjwKCAjw586hBhBrEiwAQYEnHUsdZ0mrfHyNqkUeNaUzsltApdOKaJOPHOVgnBFbeX89wU2i4D1h3BoC4skQAvD_BwE" target="_blank">Software Developer</a> bij Scalda, waar ik mijn passie voor coderen en het ontwikkelen van applicaties kan uitoefenen. Ik ben een ambivert persoon, wat betekent dat ik introvert ben, maar extravert word in de buurt van mensen die ik goed ken. Ik kan luid en energiek zijn, maar ook gereserveerd en stil.</p>
+              <p>Door de jaren heen heb ik verschillende baantjes gehad, vanaf mijn 11e toen ik een jaar samen met mijn moeder kranten bezorgde. Daarna werkte ik een zomer in de afwasruimte van theetuin <a href="https://hetkaslokaal.nl" target="_blank">Het Kaslokaal</a> in Oostkapelle. Kort daarna ben ik van 2018-2021 wekelijks begonnen met het schoonmaken van een <a href="https://www.sksouburg.net" target="_blank">schaakclub</a> in Oost-Souburg. Ik kreeg een sleutel toevertrouwd, wat me veel verantwoordelijkheid gaf. Ook heb ik tot januari 2023 bij <a href="https://minimundi.nl" target="_blank">Mindi Mundi</a> in Middelburg gewerkt. Momenteel werk ik bij <a href="http://jungle-books.nl" target="_blank">Jungle Books</a>, een klein winkeltje bij de ingang van Kaslokaal.</p>
+              <p>In mijn vrije tijd speel ik graag piano, lees ik en houd ik me bezig met creatieve activiteiten zoals tekenen, schilderen, haken en beeldhouwen. Verder kijk ik graag films en series.</p>
+              <a href="aboutMe.html"><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:15%; height: 5%;">Meer lezen</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section id="opleiding">
+        <div class="container">
+          <div class="row align-items-center projects">
+            <div class="col">
+              <br><br>
+              <h1>opleiding</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+             <p>Ik volg momenteel de opleiding <a href="https://scalda.nl/opleiding/software-developer?gclid=CjwKCAjw586hBhBrEiwAQYEnHUsdZ0mrfHyNqkUeNaUzsltApdOKaJOPHOVgnBFbeX89wU2i4D1h3BoC4skQAvD_BwE" target="_blank">Software Developer</a> aan Scalda. Deze opleiding is op niveau 4 en duurt 4 jaar. Ik zit momenteel in het eerste jaar (2022-2023). De opleiding omvat 6 vakken: front-end, programmeren, scrum, loopbaansturing, database en software engineering. we zijn vanaf het begin al aan het werken met Scrum. We werken in sprints van 3 weken, gevolgd door een reviewweek waarin we toetsen maken en het werk opleveren waar we de afgelopen 3 weken aan hebben gewerkt. Ik vind deze manier van werken erg prettig. Daarnaast ben ik zeer geïnteresseerd in de opleiding zelf. Ik leer continu nieuwe dingen en elke keer als ik iets maak, verras ik mezelf met hoeveel kennis ik al heb opgedaan binnen dit vakgebied.</p>
+             <br><br>
+             <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left;">waarom Software Development?</h3>
+             <p>Tijdens het zoeken naar een opleiding wist ik aanvankelijk niet goed wat ik wilde doen. Ik had verschillende testen gedaan en met vrienden en familie gesproken om te ontdekken welke richting ik op wilde gaan. Hoewel ik weinig kennis had van coderen en softwareontwikkeling, wist ik dat het me interesseerde. Soms hoorde ik er iets over en het leek me toch wel leuk. Ondanks dat ik er niks van wist, besloot ik de stap te wagen en me aan te melden voor de opleiding Software Developer. Nu ik een tijdje bezig ben, ben ik blij met mijn keuze. Ik ben al begonnen met het leren van nieuwe vaardigheden en ik merk dat mijn passie voor coderen en softwareontwikkeling alleen maar groeit. Het is erg leuk om te zien wat ik nu allemaal al kan binnen zo een korte tijd.</p>
+             <br><br>
+             <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left;">waarom ben ik geschikt?</h3>
+             <p>Als een sociaal persoon ben ik van nature graag betrokken bij samenwerking en teamwerk. Ik geniet ervan om met anderen te communiceren en gezamenlijk aan projecten te werken. Bovendien ben ik altijd nieuwsgierig en leergierig, voortdurend op zoek naar kennis en vaardigheden om mezelf te blijven ontwikkelen. Daarnaast ben ik bereid om feedback te ontvangen en deze te gebruiken om mijn werk te verbeteren. Om die reden lijkt deze opleiding goed bij mij te passen. </p>
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+              <img src="img/Scalda.png" style="width:90%; margin-left:10%;" class="img-fluid" alt="Scalda">
+              <img src="img/opleiding.png" class="img-fluid" alt="Opleiding">
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="showcase">
+          <div class="container">
+            <div class="row">
+              <p style="color:white;">AAAAAAAa</p>
+                <h1>Showcase</h1>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <img src="img/Trubbish.webp" style="width:50%; margin-left:15%" alt="foto laad niet">
+              </div>
+              <div class="col-6">
+              <img src="img/Spy.png" style="width:100%;" alt="foto laad niet">
+              </div>
+            </div>
+
+            <div class="row">
+            <div class="col-6">
+            <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left;">Pokemon Game</h3>
+                <p>De Pokemon Game is een Java-programma waarin je een eenvoudige versie van een Pokemon-game kunt spelen, volledig in de console zonder gebruik van JFrames. Het spel is vrij uitgebreid, met mogelijkheden om Pokemon te vangen en te bevechten. Je kunt ook je eigen Pokemon trainen en levelen, waardoor ze evolueren.</p>
+              </div>
+              <div class="col-6">
+              <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left;">International Spy Services</h3>
+              <p>International SpyServices is een website van een spionagebedrijf. Binnen de website zijn er geheime documenten te ontdekken. Daarnaast wordt bij het invullen van het contactformulier ook het IP-adres van de afzender gecontroleerd.</p>
+              </div>
+            </div>
+
+            <div class="row">
+            <div class="col-6">
+            <a href="PokemonGame.html"><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:30%; height:100%;">Meer lezen</button></a>
+              </div>
+              <div class="col-6">
+              <a href="spy.html"><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:30%; height: 100%;">Meer lezen</button></a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <img src="img/interview.png" style="width:75%; margin-left:5%" alt="foto laad niet">
+              </div>
+              <div class="col-6">
+                <img src="" alt="">
+              </div>
+            </div>
+
+            <div class="row">
+            <div class="col-6">
+            <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left;">Interview</h3>
+                <p>Voor het vak LBS (Loopbaan Sturing) hebben we een interview afgenomen bij een professional in de softwareontwikkeling. Samen met een medestudent ben ik naar Q-Avation gegaan, waar we 1 van de medewerkers hebben geïnterviewd over zijn beroep en het bedrijf waar hij werkzaam is.</p>
+              </div>
+              <div class="col-6">
+              <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left;">Comming soon</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laboriosam consectetur, inventore sapiente excepturi nobis illo, doloribus hic quam pariatur asperiores deserunt explicabo officiis voluptas quae numquam, dolorem magnam harum.</p>
+              </div>
+            </div>
+
+            <div class="row">
+            <div class="col-6">
+            <a href="interview.html"><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:30%; height: 100%;">Meer lezen</button></a>
+              </div>
+              <div class="col-6">
+              <a href=""><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:30%; height: 100%;">Meer lezen</button></a>
+              </div>
+            </div>
+
+            <div class="row">
+            <p style="color:white;">AAAAAAAa</p>
+            <p style="color:white;">AAAAAAAa</p>
+              <h1  style="text-align:center;">skills</h1>
+            </div>
+            <div style="margin-left:8%;">
+              <a href="https://www.w3schools.com/java/"  target="_blank" ><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:15%; height:150%;  text-align: center;">JAVA</button></a>
+              <a href="https://www.w3schools.com/sql/default.asp"  target="_blank" ><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:15%; height:150%; ">MYSQL</button></a>
+              <a href="https://www.w3schools.com/html/default.asp"  target="_blank" ><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:15%; height:150%;">HTML</button></a>
+              <a href="https://www.w3schools.com/css/default.asp"  target="_blank" ><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:15%; height:150%;">CSS</button></a>
+              <a href="https://www.w3schools.com/php/default.asp"  target="_blank" ><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:15%; height:150%;">PHP</button></a>
+              <a href="https://www.w3schools.com/js/default.asp"  target="_blank" ><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:15%; height:150%;">JAVASCRIPT</button></a>
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+        
+      <section id="CV">
+        <div class="container">
+          <div class="row align-items-center projects">
+            <div class="col">
+              <br><br>
+              <h1>Curriculum Vitae</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <img src="img/CV.png" style="width:100%; margin-left:0%" alt="foto laad niet">
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="resultaten">
+          <div class="container">
+
+            <div class="row align-items-center projects">
+              <div class="col">
+              <br><br>
+                <h1>resultaten</h1>
+              </div>
+
+              <div class="row">
+              <h2 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: center;">Fase Oriënterend(1-4)/Beginner(5-9)</h2>
+              </div>
+
+              <div class="row">
+
+                <div class="col-md-6 col-lg-4">
+                  <br>
+                  <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 1</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>V</td>
+                      <td>(cijfers kwijt)</td>
+                      <td>behaald</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>V</td>
+                      <td>(cijfers kwijt)</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>V</td>
+                      <td>(cijfers kwijt)</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>V</td>
+                      <td>(cijfers kwijt)</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>V</td>
+                      <td>(cijfers kwijt)</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>V</td>
+                      <td>(cijfers kwijt)</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>V</td>
+                    </tr>
+                  </table>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                <br>
+                  <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 2</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>G</td>
+                      <td>10</td>
+                      <td>behaald</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>G</td>
+                      <td>8</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>G</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>V</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>G</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>V</td>
+                      <td>9</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>G</td>
+                    </tr>
+                  </table>
+                </div>
+
+                
+                <div class="col-md-6 col-lg-4">
+                <br>
+                <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 3</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>G</td>
+                      <td>7</td>
+                      <td>behaald</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>G</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>v</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>V</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>v</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>G</td>
+                      <td>8</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>V</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                <br>
+                <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 4</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>G</td>
+                      <td>9</td>
+                      <td>behaald</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>G</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>V</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>V</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>V</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>V</td>
+                      <td>8</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>G</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                <br>
+                <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 5</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>O</td>
+                      <td>7</td>
+                      <td>behaald</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>V</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>V</td>
+                      <td>8</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>V</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>G</td>
+                      <td>8</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>G</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>G</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                <br>
+                <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 6</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>G</td>
+                      <td>7</td>
+                      <td>behaald</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>G</td>
+                      <td>5</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>G</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>G</td>
+                      <td>7</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>V</td>
+                      <td>9</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>G</td>
+                      <td>6</td>
+                      <td>Behaald</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>G</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                <br>
+                <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 7</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>O</td>
+                      <td>O</td>
+                      <td>niet behaalt</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>V</td>
+                      <td>7</td>
+                      <td>behaalt</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>V</td>
+                      <td>8</td>
+                      <td>behaalt</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>V</td>
+                      <td>6</td>
+                      <td>behaalt</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>G</td>
+                      <td>9</td>
+                      <td>behaalt</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>G</td>
+                      <td>-</td>
+                      <td>behaalt</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>G</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                <br>
+                <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 8</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>unk</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <br>
+                <h3 style="text-transform: uppercase;font-weight: 900;color: #683aa4;text-align: left; text-align: center;">Sprint 9</h3>
+                  <table>
+                    <tr>
+                      <th>vak</th>
+                      <th>review</th>
+                      <th>toets</th>
+                      <th>beordeling</th>
+                    </tr>
+                    <tr>
+                      <th>Database</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>    
+                    <tr>
+                      <th>Programmeren</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Front-End</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Software Engineering</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Scrum</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Loopbaansturing</th>
+                      <td>unk</td>
+                      <td>unk</td>
+                      <td>unk</td>
+                    </tr>
+                    <tr>
+                      <th>Stand Up</th>
+                      <td></td>
+                      <td></td>
+                      <td>unk</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="contact">
+            <div class="container">
+              <div class="row align-items-center">
+                  <h1>Contact</h1>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <p>u kan altijd contact met mij opnemen door middel van de volgende data:</p>
+                  <br>
+                </div>
+                <div class="col-lg-3">
+                  <p>	&#9990;TEL 06 11 76 60 48</p>
+                </div>
+                <div class="col-lg-3">
+                <p >boriannamulder@gmail.com</p>
+                </div>
+                <div class="col-lg-3">
+                <a href="https://www.linkedin.com/in/bo-mulder-750aa2270/"  style="color:white; font-size: 16px; font-weight: 300;" target="_blank" >LinkedIn</a>
+                </div>
+                <div class="col-lg-3">
+                <a href="https://github.com/B1BaB0" style="color:white; font-size: 16px; font-weight: 300;" target="_blank" >GitHub</a>
+                </div>
+              </div>
+              <div>
+              <div class="row">
+              <div class="col-lg-4" style="height:300%; margin-left:-5vw; margin-top:-5%">
+              </div>
+                <div class="col-lg-6" style="height:6%;  background-color:#d8e4fc; margin-top:8%;">
+                <div class="col-lg-4" style="height:500%; width:95%; background-color:white; margin-top:8%; margin-left:3%;">
+                <br>
+                <h1 style="color:#283a9a;">Contact me!</h1>
+                <div class="col-sm-12 col-lg-4" style="height:100%; width:90%; background-color:white; margin-bottom:5%;">
+                <form action="mailto:boriannamulder@gmail.com" method="post" style="margin-top:5%; margin-left:10%;">
+                <input style="background-color:#f0ecfc; border-radius: 2%; width:39%; height:5vh; border:solid 2px #f0ecfc;" type="text"  name="name" placeholder="First name">
+                <input style="background-color:#f0ecfc; border-radius: 2%; width:39%; height:5vh; border:solid 2px #f0ecfc;" type="text"  name="lastname" placeholder="Last name">
+                <input style="background-color:#e0e4fc; border-radius: 2%; width:78%; height:5vh; margin-top:3vh; border:solid 2px #e0e4fc "type="text"  name="email" placeholder="Email">
+                <input style="background-color:#c8ccfc; border-radius: 2%; width:78%; height:10vh; margin-top:3vh; border:solid 2px #c8ccfc "type="text"  name="message" placeholder="Type your message here">
+                <div class="d-grid">
+                  <br>
+                  <input  class="btn btn-lg" style="width:15vw; margin-top:2vh; margin-left:4vw;  background-color:black; color:white;" type="submit" value="Send">
+                  <br><br>
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </section>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

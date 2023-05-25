@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>E-portfolio</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <style>
+      a, a:link, a:visited {
+  color: #946bc9;
+  }
+
+
+  a:hover {
+    color:#472870;
+  }
+    </style>
+
+</head>
+
+<body>
+  <header>
+
+<nav class="nav">
+  <div class="container">
+      <div class="logo">
+          <a href="index.html" style="color: #683aa4; font-weight: bold;">Bo Mulder</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+          </li>
+          </ul>
+      </div>
+      <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+      </span>
+  </div>
+</nav>
+
+
+<section class="home">
+  <h1 class="title"><a href="index.html">Home</a> → <a href="interview.html">Interview</a></h1>
+</section>
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+  $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          console.log("OK");
+      } else {
+          $('.nav').removeClass('affix');
+      }
+  });
+  
+  $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+
+  });
+
+</script>
+  </header>
+    <section id="aaaaaa">
+    <div class="container">
+
+      <div class="row">
+        <h1 style="text-align:center;">LoopBaanSturing Interview</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+
+        <iframe  style="background-color:white; border:black solid 2px; margin-top:3%;"src="img/Interview_LBS.pdf" width="100%" height="95% ">
+            </iframe>
+              
+        </div>
+
+        <div class="col-lg-6">
+          <p>Samen met een mede-student heb ik onlangs een geweldige ervaring gehad in ons vakgebied van Software Development. We zijn op bezoek geweest bij Q-Avation, een klein maar innovatief bedrijf in Middelburg dat gespecialiseerd is in het ontwikkelen van verlichtingssystemen voor helikopterlandingsbanen. We waren erg onder de indruk van hun expertise en toewijding aan technologische innovatie.</p>
+
+          <p>Wat ons meteen opviel, was dat er bij Q-Avation slechts één persoon werkzaam is binnen het software development team. Deze professional werkt vaak samen met stagiairs, om de nieuwste softwaretoepassingen te ontwikkelen en te implementeren. Hierdoor waren we direct betrokken bij de dagelijkse werkzaamheden en konden we leren van een ervaren softwareontwikkelaar. Het was een unieke kans om praktijkervaring op te doen en te leren van de expertise van deze medewerker.</p>
+
+          <p>Daarnaast waren we onder de indruk van de technologische infrastructuur en de professionele werkomgeving bij Q-Avation. Het bedrijf stimuleert innovatie en creativiteit, en we werden aangemoedigd om actief deel te nemen aan de ontwikkeling van softwareoplossingen. We kregen de mogelijkheid om aan echte projecten te werken en onze programmeervaardigheden verder te ontwikkelen.</p>
+
+          <p>Al met al was ons bezoek aan Q-Avation een waardevolle en inspirerende ervaring. We zijn dankbaar voor de kans om te leren van professionals in de industrie en onze kennis van softwareontwikkeling verder te vergroten. Het heeft onze passie voor software development versterkt en ons gemotiveerd om te blijven streven naar uitmuntendheid in ons vakgebied.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div style="margin-left:34%;">
+        <a href="index.html"><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:30%; height: 140%;">Terug naar Home</button></a>
+        </div>
+      </div>
+          
+        </div>
+
+    </section>
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

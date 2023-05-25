@@ -1,0 +1,70 @@
+body {
+  display: block;
+  overflow-x: hidden;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #683aa4;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+button {
+  max-width: 50%;
+  border-radius: 50px !important;
+}
+
+#contact {
+  text-align: center;
+  background-color: #683aa4;
+  color: white;
+}
+#contact h1 {
+  text-align: center;
+  color: white;
+}
+
+.title{
+  text-align: center;
+  margin-top: 20%;
+  color: white;
+  font-size:xx-large;
+}
+
+a, a:link, a:visited {
+  color: #946bc9;
+  }
+
+
+  a:hover {
+    color:#472870;
+  }
+
+table {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  td{
+    text-align: center;
+  }
+
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+  
+
+  
+

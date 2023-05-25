@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>E-portfolio</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <style>
+      a, a:link, a:visited {
+  color: #946bc9;
+  }
+
+
+  a:hover {
+    color:#472870;
+  }
+    </style>
+
+</head>
+
+<body>
+  <header>
+
+<nav class="nav">
+  <div class="container">
+      <div class="logo">
+          <a href="index.html" style="color: #683aa4; font-weight: bold;">Bo Mulder</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+          </li>
+          </ul>
+      </div>
+      <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+      </span>
+  </div>
+</nav>
+
+
+<section class="home">
+  <h1 class="title"><a href="index.html">Home</a> → <a href="pokemonGame.html">Pokemon Game</a></h1>
+</section>
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+  $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          console.log("OK");
+      } else {
+          $('.nav').removeClass('affix');
+      }
+  });
+  
+  $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+
+  });
+
+</script>
+  </header>
+    <section id="aaaaaa">
+        <div class="container">
+          <div class="row">
+          <h1 style="text-align:center;">Pokemon Game</h1>
+            <div class="col-lg-6">
+              <img src="img/code2.png" style="width:100%" alt="foto laad niet">
+              </div>
+
+            <div class="col-lg-6">
+              <br><br>
+              <p>De Pokemon Game is een Java-programma waarmee je een eenvoudige versie van Pokemon kunt spelen. Hier naast zie je een klein stukje van de code, maar hieronder zijn grotere delen van de code te vinden om naar te kijken. We hebben twee sprints aan de game gewerkt en de volgende functies zijn toegevoegd: bij het starten van de game kun je een naam kiezen, een beginners Pokemon selecteren en krijg je een menu met de volgende opties: 1. Find Pokemon, 2. My Pokemon, 3. Inventory, 4. Badges, 5. Challenge Pallet town's Gym Leader, 6.Travel, 7. Visit Pokecenter, 8. Exit Game. Je kunt hieruit kiezen wat je wilt doen.</p>
+              <p>Als je kiest voor "1. Find Pokemon", kom je een Pokemon tegen en kun je vervolgens kiezen uit de volgende opties: 1. FIGHT, 2. POKEMON, 3. ITEM, 4. RUN. Als je kiest voor 1. FIGHT, val je de Pokemon aan en wordt je Pokemon ook aangevallen, enzovoort. Als je een Pokemon verslaat, verdien je XP waarmee je Pokemon kunnen levelen en evolueren. Kies je voor 2. POKEMON, dan kun je van Pokemon wisselen. Bij 3. ITEM kun je items gebruiken, zoals een Pokebal om de Pokemon die je hebt gevonden te vangen. Bij 4. RUN ren je weg van het gevecht.</p>
+            </div>
+          </div>
+
+          <div class="row">
+              <p style="color:white;">AAAAAAAAAAAAAAAAAA</p><p style="color:white;">AAAAAAAAAAAAAAAAAA</p>
+            <div class="col-lg-6">
+              <br><br>
+              <p>In "My Pokemon", wanneer je kiest voor optie 2, krijg je lijst te zien van al je eigen Pokemon. Bij optie 3, "Inventory", wordt er een overzicht getoond van alle items die je momenteel in je bezit hebt, zoals bijvoorbeeld Pokeballs. Optie 4, "Badges", geeft een weergave van alle gewonnen badges die je hebt verdiend door verschillende gymleaders uit te dagen en te verslaan. Als je kiest voor optie 5, "Challenge Pallet Town's Gym Leader", heb je de kans om de uitdagende gymleader van Pallet Town te confronteren en te proberen een felbegeerde badge te winnen. Met optie 6, "Travel", kun je de wereld van Pokemon verkennen en andere steden bezoeken, waar je nieuwe Pokemon kunt ontdekken en uitdagingen kunt aangaan. Optie 7, "Visit Pokecenter", hier kan je al je Pokemon laten genezen tot het maximale niveau, zodat ze klaar zijn voor nieuwe avonturen. En tot slot, met optie 8, "Exit Game", kun je op elk gewenst moment stoppen met spelen.</p>
+              <p>hieronder staan een paar Classes aan code van de Pokemon Game</p>
+              </div>
+
+            <div class="col-lg-6">
+            <img src="img/code3.png" style="width:95%;" alt="foto laad niet">
+          </div>
+
+          <div class="row">
+              <p style="color:white;">AAAAAAAAAAAAAAAAAA</p><p style="color:white;">AAAAAAAAAAAAAAAAAA</p>
+            <div class="col-lg-6">
+            <iframe  style="background-color:white; border:black solid 2px; margin-top:3%;"src="img/Game.txt" width="100%" height="95% ">
+            </iframe>
+              </div>
+
+              
+            <div class="col-lg-6">
+            <br>
+            <img src="img/code3.png" style="width:95%;" alt="foto laad niet">
+          </div>
+            
+            
+          </div>
+
+          <div class="row">
+            <br><br>
+            <div style="margin-left:35%;">
+              <a href="index.html"><button class="btn btn-primary btn-lg" style="background-color:#683aa4;border:#683aa4; width:30%; height: 140%;">Terug naar Home</button></a>
+            </div>  
+        </div>
+        </div>
+
+    </section>
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
